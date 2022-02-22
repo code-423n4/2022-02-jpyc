@@ -27,7 +27,7 @@ Under "SPONSORS ADD INFO HERE" heading below, include the following:
 - [x] Describe anything else that adds any special logic that makes your approach unique
 - [x] Identify any areas of specific concern in reviewing the code
 - [x] Add all of the code to this repo that you want reviewed
-- [ ] Create a PR to this repo with the above changes.
+- [x] Create a PR to this repo with the above changes.
 
 ---
 
@@ -121,7 +121,7 @@ Here is the list of main contracts in the protocol.
 | JPYCv2/contracts/v1/Rescuable.sol                   | Solidity |         32 |         40 |         10 |         82 |
 | JPYCv2/contracts/v2/FiatTokenV2.sol                 | Solidity |        419 |        205 |         46 |        670 |
 | JPYCv2/contracts/v2/FiatTokenV2test.sol             | Solidity |          8 |          2 |          5 |         15 |
-| Total                                                                       |          |      1,813 |      1,584 |        348 |      3,745 
+| Total                                               |          |      1,813 |      1,584 |        348 |      3,745 
 
 
 ## Proxy
@@ -258,7 +258,7 @@ The contract uses v, r and s to recover the address and verify that it matches t
 - Override the `_authorizeUpgrade` function with `onlyOwner` modifier.
 
 #### FiatTokenV2
-- It is an assumed upgraded version of FiatTokenV1 with a new functionality `whitelist`.
+- It is an assumed upgraded version of FiatTokenV1 with a new functionality `whitelist` we may consider to add in the future.
 - It allows only users who are whitelisted to send or approve over 100,000 token to other user.
 - Other than that everything is the same as FiatTokenV1.
 
