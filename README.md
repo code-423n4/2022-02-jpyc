@@ -33,9 +33,9 @@ Under "SPONSORS ADD INFO HERE" heading below, include the following:
 
 # ⭐️ Sponsor: Provide marketing details
 
-- [ ] Your logo (URL or add file to this repo - SVG or other vector format preferred)
-- [ ] Your primary Twitter handle
-- [ ] Any other Twitter handles we can/should tag in (e.g. organizers' personal accounts, etc.)
+- [x] Your logo (URL or add file to this repo - SVG or other vector format preferred)
+- [x] Your primary Twitter handle
+- [x] Any other Twitter handles we can/should tag in (e.g. organizers' personal accounts, etc.)
 - [ ] Your Discord URI
 - [ ] Your website
 - [ ] Optional: Do you have any quirks, recurring themes, iconic tweets, community "secret handshake" stuff we could work in? How do your people recognize each other, for example? 
@@ -80,3 +80,40 @@ Under "SPONSORS ADD INFO HERE" heading below, include the following:
 This repo will be made public before the start of the contest. (C4 delete this line when made public)
 
 [ ⭐️ SPONSORS ADD INFO HERE ]
+## Protocol contracts' structure
+![contractArchitecture](contractArchitecture.drawio.svg)
+
+# Contract Overview
+Here is the list of main contracts in the protocol.
+
+
+
+
+## hardhat usage
+- hardhat
+  - https://hardhat.org/getting-started/
+- solidity-coverage
+  - https://www.npmjs.com/package/solidity-coverage
+- contract-sizer
+  - https://www.npmjs.com/package/hardhat-contract-sizer
+
+```
+npm i
+
+// test
+npx hardhat test
+// When specifying the path
+npx hardhat test test/direcotry/file
+
+// coverage
+npx hardhat coverage
+// When specifying the path
+npx hardhat coverage test/direcotry/file
+
+// contract-sizer
+npx hardhat size-contracts
+```
+
+
+# Our Website
+http://jpyc.jp
