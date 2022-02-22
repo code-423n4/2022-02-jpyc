@@ -275,6 +275,8 @@ git clone https://github.com/code-423n4/2022-02-jpyc.git
 
 cd 2022-02-jpyc
 
+cd contracts
+
 npm i
 
 // test
