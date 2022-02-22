@@ -84,6 +84,43 @@ This repo will be made public before the start of the contest. (C4 delete this l
 ![contractArchitecture](contractArchitecture.drawio.svg)
 
 # Contract Overview
+Files
+| filename                                                                    | language | code       | comment    | blank      | total      |
+| --- | --- | --- | --- | --- | --- |
+| JPYCv2/contracts/README.md                          | Markdown |         69 |          0 |          5 |         74 |
+| JPYCv2/contracts/proxy/ERC1967Proxy.sol             | Solidity |         12 |         17 |          4 |         33 |
+| JPYCv2/contracts/proxy/Proxy.sol                    | Solidity |         29 |         47 |         10 |         86 |
+| JPYCv2/contracts/test/ContractCall.sol              | Solidity |          8 |          1 |          4 |         13 |
+| JPYCv2/contracts/test/DummyERC20.sol                | Solidity |         11 |         23 |          5 |         39 |
+| JPYCv2/contracts/test/ECRecoverTest.sol             | Solidity |         12 |         23 |          3 |         38 |
+| JPYCv2/contracts/test/ERC20.sol                     | Solidity |        122 |        194 |         39 |        355 |
+| JPYCv2/contracts/test/FiatTokenV1Test.sol           | Solidity |          7 |         23 |          5 |         35 |
+| JPYCv2/contracts/test/FiatTokenV2Test.sol           | Solidity |         11 |         23 |          4 |         38 |
+| JPYCv2/contracts/test/IERC20Metadata.sol            | Solidity |          7 |         16 |          5 |         28 |
+| JPYCv2/contracts/test/UUPSUpgradeableMock.sol       | Solidity |         10 |          1 |          4 |         15 |
+| JPYCv2/contracts/upgradeability/ERC1967Upgrade.sol  | Solidity |         48 |         43 |         11 |        102 |
+| JPYCv2/contracts/upgradeability/IBeacon.sol         | Solidity |          4 |         10 |          2 |         16 |
+| JPYCv2/contracts/upgradeability/UUPSUpgradeable.sol | Solidity |         49 |         59 |         11 |        119 |
+| JPYCv2/contracts/upgradeability/draft-IERC1822.sol  | Solidity |          4 |         14 |          2 |         20 |
+| JPYCv2/contracts/util/Address.sol                   | Solidity |         85 |        114 |         18 |        217 |
+| JPYCv2/contracts/util/Context.sol                   | Solidity |         10 |         12 |          4 |         26 |
+| JPYCv2/contracts/util/ECRecover.sol                 | Solidity |         22 |         48 |          5 |         75 |
+| JPYCv2/contracts/util/EIP712.sol                    | Solidity |         40 |         43 |          4 |         87 |
+| JPYCv2/contracts/util/IERC20.sol                    | Solidity |         15 |         58 |          9 |         82 |
+| JPYCv2/contracts/util/SafeERC20.sol                 | Solidity |         58 |         31 |         10 |         99 |
+| JPYCv2/contracts/util/StorageSlot.sol               | Solidity |         51 |         39 |         10 |        100 |
+| JPYCv2/contracts/v1/AbstractFiatTokenV1.sol         | Solidity |         24 |         23 |          6 |         53 |
+| JPYCv2/contracts/v1/Blocklistable.sol               | Solidity |         43 |         46 |         11 |        100 |
+| JPYCv2/contracts/v1/EIP2612.sol                     | Solidity |         37 |         43 |         10 |         90 |
+| JPYCv2/contracts/v1/EIP3009.sol                     | Solidity |        134 |         94 |         22 |        250 |
+| JPYCv2/contracts/v1/EIP712Domain.sol                | Solidity |         16 |         29 |          5 |         50 |
+| JPYCv2/contracts/v1/FiatTokenV1.sol                 | Solidity |        356 |        180 |         39 |        575 |
+| JPYCv2/contracts/v1/Ownable.sol                     | Solidity |         26 |         31 |         10 |         67 |
+| JPYCv2/contracts/v1/Pausable.sol                    | Solidity |         34 |         52 |         10 |         96 |
+| JPYCv2/contracts/v1/Rescuable.sol                   | Solidity |         32 |         40 |         10 |         82 |
+| JPYCv2/contracts/v2/FiatTokenV2.sol                 | Solidity |        419 |        205 |         46 |        670 |
+| JPYCv2/contracts/v2/FiatTokenV2test.sol             | Solidity |          8 |          2 |          5 |         15 |
+| Total                                                                       |          |      1,813 |      1,584 |        348 |      3,745 |
 Here is the list of main contracts in the protocol.
 
 
