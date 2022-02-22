@@ -84,7 +84,8 @@ This repo will be made public before the start of the contest. (C4 delete this l
 ![contractArchitecture](contractArchitecture.drawio.svg)
 
 # Contract Overview
-Files
+
+Here is the list of main contracts in the protocol.
 | filename                                                                    | language | code       | comment    | blank      | total      |
 | --- | --- | --- | --- | --- | --- |
 | JPYCv2/contracts/README.md                          | Markdown |         69 |          0 |          5 |         74 |
@@ -120,8 +121,7 @@ Files
 | JPYCv2/contracts/v1/Rescuable.sol                   | Solidity |         32 |         40 |         10 |         82 |
 | JPYCv2/contracts/v2/FiatTokenV2.sol                 | Solidity |        419 |        205 |         46 |        670 |
 | JPYCv2/contracts/v2/FiatTokenV2test.sol             | Solidity |          8 |          2 |          5 |         15 |
-| Total                                                                       |          |      1,813 |      1,584 |        348 |      3,745 |
-Here is the list of main contracts in the protocol.
+| Total                                                                       |          |      1,813 |      1,584 |        348 |      3,745 
 
 
 
