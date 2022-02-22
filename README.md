@@ -1,73 +1,3 @@
-# ✨ So you want to sponsor a contest
-
-This `README.md` contains a set of checklists for our contest collaboration.
-
-Your contest will use two repos: 
-- **a _contest_ repo** (this one), which is used for scoping your contest and for providing information to contestants (wardens)
-- **a _findings_ repo**, where issues are submitted. 
-
-Ultimately, when we launch the contest, this contest repo will be made public and will contain the smart contracts to be reviewed and all the information needed for contest participants. The findings repo will be made public after the contest is over and your team has mitigated the identified issues.
-
-Some of the checklists in this doc are for **C4 (🐺)** and some of them are for **you as the contest sponsor (⭐️)**.
-
----
-
-# Contest setup
-
-## ⭐️ Sponsor: Provide contest details
-
-Under "SPONSORS ADD INFO HERE" heading below, include the following:
-
-- [x] Name of each contract and:
-  - [x] source lines of code (excluding blank lines and comments) in each
-  - [x] external contracts called in each
-  - [x] libraries used in each
-- [x] Describe any novel or unique curve logic or mathematical models implemented in the contracts
-- [x] Does the token conform to the ERC-20 standard? In what specific ways does it differ?
-- [x] Describe anything else that adds any special logic that makes your approach unique
-- [x] Identify any areas of specific concern in reviewing the code
-- [x] Add all of the code to this repo that you want reviewed
-- [x] Create a PR to this repo with the above changes.
-
----
-
-# ⭐️ Sponsor: Provide marketing details
-
-- [x] Your logo (URL or add file to this repo - SVG or other vector format preferred)
-- [x] Your primary Twitter handle
-- [x] Any other Twitter handles we can/should tag in (e.g. organizers' personal accounts, etc.)
-- [x] Your Discord URI
-- [x] Your website
-- [ ] Optional: Do you have any quirks, recurring themes, iconic tweets, community "secret handshake" stuff we could work in? How do your people recognize each other, for example? 
-- [ ] Optional: your logo in Discord emoji format
-
----
-
-# Contest prep
-
-## 🐺 C4: Contest prep
-- [x] Rename this repo to reflect contest date (if applicable)
-- [x] Rename contest H1 below
-- [x] Add link to report form in contest details below
-- [x] Update pot sizes
-- [x] Fill in start and end times in contest bullets below.
-- [ ] Move any relevant information in "contest scope information" above to the bottom of this readme.
-- [ ] Add matching info to the [code423n4.com public contest data here](https://github.com/code-423n4/code423n4.com/blob/main/_data/contests/contests.csv))
-- [ ] Delete this checklist.
-
-## ⭐️ Sponsor: Contest prep
-- [x] Make sure your code is thoroughly commented using the [NatSpec format](https://docs.soliditylang.org/en/v0.5.10/natspec-format.html#natspec-format).
-- [x] Modify the bottom of this `README.md` file to describe how your code is supposed to work with links to any relevent documentation and any other criteria/details that the C4 Wardens should keep in mind when reviewing. ([Here's a well-constructed example.](https://github.com/code-423n4/2021-06-gro/blob/main/README.md))
-- [x] Please have final versions of contracts and documentation added/updated in this repo **no less than 8 hours prior to contest start time.**
-- [x] Ensure that you have access to the _findings_ repo where issues will be submitted.
-- [ ] Promote the contest on Twitter (optional: tag in relevant protocols, etc.)
-- [ ] Share it with your own communities (blog, Discord, Telegram, email newsletters, etc.)
-- [ ] Optional: pre-record a high-level overview of your protocol (not just specific smart contract functions). This saves wardens a lot of time wading through documentation.
-- [x] Designate someone (or a team of people) to monitor DMs & questions in the C4 Discord (**#questions** channel) daily (Note: please *don't* discuss issues submitted by wardens in an open channel, as this could give hints to other wardens.)
-- [ ] Delete this checklist and all text above the line below when you're ready.
-
----
-
 # JPYC contest details
 - $28,500 USDC main award pot
 - $1,500 USDC gas optimization award pot
@@ -77,11 +7,7 @@ Under "SPONSORS ADD INFO HERE" heading below, include the following:
 - Starts February 24 2022 00:00 UTC
 - Ends February 26 2022 23:59 UTC
 
-This repo will be made public before the start of the contest. (C4 delete this line when made public)
-
-[ ⭐️ SPONSORS ADD INFO HERE ]
-
-Previous JPYC's information, white paper, and more can be found [here](https://jpyc.jp). This time we developed 
+Previous JPYC's information, white paper, and more can be found [here](https://jpyc.jp). 
 ## Brief introduction
 JPYC protocol is an ERC20 compatible token. It allows minting of tokens by multiple entities, pausing all activity, freezing of individual addresses, rescuing of tokens and UUPS proxy pattern to upgrade the contract so that bugs can be fixed or features added. 
 ## Protocol contracts' structure
@@ -89,7 +15,7 @@ Protocol's contracts, Libraries and interfaces are below.
 ![contractArchitecture](contractArchitecture.drawio.svg)
 
 ## About solidity's version
-According to [Openzeppelin's recent update](https://github.com/OpenZeppelin/openzeppelin-contracts/commit/e192fac2769386b7d4b61a3541073ab47bb7723a) and [this contract's version](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/e192fac2769386b7d4b61a3541073ab47bb7723a/contracts/proxy/ERC1967/ERC1967Upgrade.sol#L17). We need to keep the solidity verion equal to or higher than `pragma solidity 0.8.2`. We decided to use the comparatively new version of `0.8.11`.
+According to [Openzeppelin's recent update](https://github.com/OpenZeppelin/openzeppelin-contracts/commit/e192fac2769386b7d4b61a3541073ab47bb7723a) and [this contract's version](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/e192fac2769386b7d4b61a3541073ab47bb7723a/contracts/proxy/ERC1967/ERC1967Upgrade.sol#L17). We need to keep the solidity version equal to or higher than `pragma solidity 0.8.2`. We decided to use the comparatively new version of `0.8.11`.
 
 
 # Contract Overview
@@ -128,7 +54,7 @@ Here is the list of main contracts in the protocol.
 ### Comparison of upgradeable pattern
 <table>
   <tr><th width="130">Upgrading Pattern</th><th width="450">Good</th><th width="450">Bad</th></tr>
-  <tr><td>UUPS</td><td>・Good gas efficiency </br>・More flexibility about the upgradeability when upgrade function is located in implementation</br>・Upgrade function can be customized（access control, Ownable）<br>・Proxy with less comlexity <br>・Upgradeability can be removed </td><td>・Has the risk of losing upgradeability if the upgrade function is not included</br>・Some bugs reported on github in the past<br>・More complexity in implementation</td></tr>
+  <tr><td>UUPS</td><td>・Good gas efficiency </br>・More flexibility about the upgradeability when upgrade function is located in implementation</br>・Upgrade function can be customized（access control, Ownable）<br>・Proxy with less complexity <br>・Upgradeability can be removed </td><td>・Has the risk of losing upgradeability if the upgrade function is not included</br>・Some bugs reported on github in the past<br>・More complexity in implementation</td></tr>
    <tr><td>Transparent</td><td>・Longer history with many real examples</td><td>・Bad gas efficency<br>・More comlexity in proxy</td></tr>
 </table>
 
@@ -167,12 +93,12 @@ In light of the current condition, we were hesitating between UUPS parxy and Tra
 ### Explanation of UUPS contract
 https://github.com/OpenZeppelin/openzeppelin-contracts/tree/master/contracts/proxy
 
-We adopted openzeppelin's library to implement the UUPS upgradeable pattern. The only thing we have changed is we added `uint256[50] private _gap;` as the last part of serveral contracts in order to prepare for future upgradings(e.g. adding state variables) and be aligned with Openzeppelin's code.
+We adopted openzeppelin's library to implement the UUPS upgradeable pattern. The only thing we have changed is we added `uint256[50] private _gap;` as the last part of several contracts in order to prepare for future upgradings(e.g. adding state variables) and be aligned with Openzeppelin's code.
 
 #### Proxy.sol
 - This contract provides a `_fallback` function that delegates all calls from proxy contract to implementation contract using `_delegate` function. The virtual `_implementation` function needs to be overrode. 
 #### UUPSUpgradeable.sol
-This is an upgradeability mechanism designed for UUPS proxies. The contract is inherited by the implemetation contract(`FiatTokenV1`). By inheriting this contract, implementation contract acquires upgradeability. 
+This is an upgradeability mechanism designed for UUPS proxies. The contract is inherited by the implementation contract(`FiatTokenV1`). By inheriting this contract, implementation contract acquires upgradeability. 
 
 We want to note that the `_authorizeUpgrade` function must be overrode by the implementation contract. we have done that and set the access right `onlyOwner`.
 
@@ -180,7 +106,7 @@ We want to note that the `_authorizeUpgrade` function must be overrode by the im
 
 
 #### ERC1967Upgrade.sol
-The contract is from [EIP1967](https://eips.ethereum.org/EIPS/eip-1967). It standardise where proxies store the address of the logic contract they delegate to, as well as other proxy-specific information.
+The contract is from [EIP1967](https://eips.ethereum.org/EIPS/eip-1967). It standardizes where proxies store the address of the logic contract they delegate to, as well as other proxy-specific information.
 
 #### ERC1967Proxy.sol
 This is the Proxy contract. It is from OpenZeppelin's library. It needs implementation contract's address `_logic` and `_data` to be initialized.
@@ -191,14 +117,14 @@ This is the Proxy contract. It is from OpenZeppelin's library. It needs implemen
   - Initializes the upgradeable proxy with an initial implementation specified by `_logic`.
   - `_data` is an encoded function call, and the function call initializes the storage of the proxy like a `constructor`.
 - _implementation
-  - It override the function in `Proxy.sol` and is called by function of `Proxy.sol`.
+  - It overrides the function in `Proxy.sol` and is called by function of `Proxy.sol`.
 
-## implementation
-### explanation of implementation contract
-- We created implementation with reference to [the centre-tokens](https://github.com/centrehq/centre-tokens/tree/master/contracts ), Which is a contract with various functions added to the ERC20 standard. 
+## Implementation
+### Explanation of implementation contract
+- We created implementation with reference to [the centre-tokens](https://github.com/centrehq/centre-tokens/tree/master/contracts ), which is a contract with various functions added to the ERC20 standard. 
 - Also, each contract declares an empty state variable `gap`, so that state variables can be added later.
 
-Hereby, I will explain every single added function for each contract. 
+Here, I will explain every single added function for each contract. 
 #### Ownable.sol
 A contract that manages the access rights of the contract.
 It is the same as openzeppelin library except for not adding the function `renounceOwnership` used for removing ownership.
