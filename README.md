@@ -87,7 +87,7 @@ This repo will be made public before the start of the contest. (C4 delete this l
 
 Here is the list of main contracts in the protocol.
 | filename                                                                    | language | code       | comment    | blank      | total      |
-| --- | --- | --- | --- | --- | --- |
+| --- | --- | --- | --- | --- | --- | 
 | JPYCv2/contracts/proxy/ERC1967Proxy.sol             | Solidity |         12 |         17 |          4 |         33 |
 | JPYCv2/contracts/proxy/Proxy.sol                    | Solidity |         29 |         47 |         10 |         86 |
 | JPYCv2/contracts/upgradeability/ERC1967Upgrade.sol  | Solidity |         48 |         43 |         11 |        102 |
