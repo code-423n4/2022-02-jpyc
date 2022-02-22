@@ -88,12 +88,12 @@ In light of the current condition, we were hesitating between UUPS parxy and Tra
 - More simplicity in Proxy
 - Less gas fee for user
 - Higher flexibility for upgradeability
-- Recommended by openzeppelin team
+- Recommended by OpenZeppelin team
 
 ### Explanation of UUPS contract
 https://github.com/OpenZeppelin/openzeppelin-contracts/tree/master/contracts/proxy
 
-We adopted openzeppelin's library to implement the UUPS upgradeable pattern. The only thing we have changed is we added `uint256[50] private _gap;` as the last part of several contracts in order to prepare for future upgradings(e.g. adding state variables) and be aligned with Openzeppelin's code.
+We adopted OpenZeppelin's library to implement the UUPS upgradeable pattern. The only thing we have changed is we added `uint256[50] private _gap;` as the last part of several contracts in order to prepare for future upgradings(e.g. adding state variables) and be aligned with Openzeppelin's code.
 
 #### Proxy.sol
 - This contract provides a `_fallback` function that delegates all calls from proxy contract to implementation contract using `_delegate` function. The virtual `_implementation` function needs to be overrode. 
