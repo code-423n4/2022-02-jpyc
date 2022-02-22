@@ -1,0 +1,1356 @@
+{
+  "version": "3.2",
+  "log": [
+    {
+      "ERC1967Proxy": {
+        "src": "contracts/proxy/ERC1967Proxy.sol:15",
+        "version": {
+          "withMetadata": "62035c20d5b98802d814af7e1aedd9b8b2ae1c40135172bcfffdab9decda21b7",
+          "withoutMetadata": "62035c20d5b98802d814af7e1aedd9b8b2ae1c40135172bcfffdab9decda21b7",
+          "linkedWithoutMetadata": "62035c20d5b98802d814af7e1aedd9b8b2ae1c40135172bcfffdab9decda21b7"
+        },
+        "inherit": [
+          "ERC1967Upgrade",
+          "Proxy"
+        ],
+        "libraries": [],
+        "methods": [
+          "(address,bytes)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "ERC1967Proxy",
+            "src": "contracts/proxy/ERC1967Proxy.sol:22"
+          }
+        ],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "Proxy": {
+        "src": "contracts/proxy/Proxy.sol:16",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "()",
+          "()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "ContractCall": {
+        "src": "contracts/test/ContractCall.sol:7",
+        "version": {
+          "withMetadata": "5bd0e250537b57767457c32ec71aec355726171909cba833afb4a6393904dde8",
+          "withoutMetadata": "1c7d1b4861d3f233c3f1e00ce556d78c57a88079559e0cacdc48f3f2f74618d8",
+          "linkedWithoutMetadata": "1c7d1b4861d3f233c3f1e00ce556d78c57a88079559e0cacdc48f3f2f74618d8"
+        },
+        "inherit": [],
+        "libraries": [
+          "Address"
+        ],
+        "methods": [
+          "functionCall(address,bytes)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "DummyERC20": {
+        "src": "contracts/test/DummyERC20.sol:31",
+        "version": {
+          "withMetadata": "a682680f410729d51a7856f1430f8e1c42d1b6b89fe1a9a9ec954e52221db2f2",
+          "withoutMetadata": "b08532d0c1b9962a4a6c3dbfdda1ae216babb87e4d116b12a451c8238714e617",
+          "linkedWithoutMetadata": "b08532d0c1b9962a4a6c3dbfdda1ae216babb87e4d116b12a451c8238714e617"
+        },
+        "inherit": [
+          "ERC20",
+          "IERC20Metadata",
+          "IERC20",
+          "Context"
+        ],
+        "libraries": [],
+        "methods": [
+          "(string,string,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "DummyERC20",
+            "src": "contracts/test/DummyERC20.sol:32"
+          }
+        ],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "ECRecoverTest": {
+        "src": "contracts/test/ECRecoverTest.sol:29",
+        "version": {
+          "withMetadata": "fabe08b02e6873dee19eb50021bd4c5db2bf7b2bd2d151ccdb24fe46b15fc7c1",
+          "withoutMetadata": "3b652991e3a5ad7d8dec192a794b8fbdd112b1de2265311ab423f20a576ab2ba",
+          "linkedWithoutMetadata": "3b652991e3a5ad7d8dec192a794b8fbdd112b1de2265311ab423f20a576ab2ba"
+        },
+        "inherit": [],
+        "libraries": [
+          "ECRecover"
+        ],
+        "methods": [
+          "recover(bytes32,uint8,bytes32,bytes32)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "ERC20": {
+        "src": "contracts/test/ERC20.sol:34",
+        "version": {
+          "withMetadata": "0809d0787f0e80063dc93dcef767a7f97b0d5a2d456fbc447f1cc895fc241280",
+          "withoutMetadata": "7cdc324b41df39e277f62e25b6ca302d7b1bf20913b894a0f9606de8f8985ad9",
+          "linkedWithoutMetadata": "7cdc324b41df39e277f62e25b6ca302d7b1bf20913b894a0f9606de8f8985ad9"
+        },
+        "inherit": [
+          "IERC20Metadata",
+          "IERC20",
+          "Context"
+        ],
+        "libraries": [],
+        "methods": [
+          "(string,string)",
+          "name()",
+          "symbol()",
+          "decimals()",
+          "totalSupply()",
+          "balanceOf(address)",
+          "transfer(address,uint256)",
+          "allowance(address,address)",
+          "approve(address,uint256)",
+          "transferFrom(address,address,uint256)",
+          "increaseAllowance(address,uint256)",
+          "decreaseAllowance(address,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "ERC20",
+            "src": "contracts/test/ERC20.sol:53"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "contract": "ERC20",
+              "label": "_balances",
+              "type": "t_mapping(t_address,t_uint256)",
+              "src": "contracts/test/ERC20.sol:35"
+            },
+            {
+              "contract": "ERC20",
+              "label": "_allowances",
+              "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))",
+              "src": "contracts/test/ERC20.sol:37"
+            },
+            {
+              "contract": "ERC20",
+              "label": "_totalSupply",
+              "type": "t_uint256",
+              "src": "contracts/test/ERC20.sol:39"
+            },
+            {
+              "contract": "ERC20",
+              "label": "_name",
+              "type": "t_string_storage",
+              "src": "contracts/test/ERC20.sol:41"
+            },
+            {
+              "contract": "ERC20",
+              "label": "_symbol",
+              "type": "t_string_storage",
+              "src": "contracts/test/ERC20.sol:42"
+            }
+          ],
+          "types": {
+            "t_mapping(t_address,t_uint256)": {
+              "label": "mapping(address => uint256)"
+            },
+            "t_address": {
+              "label": "address"
+            },
+            "t_uint256": {
+              "label": "uint256"
+            },
+            "t_mapping(t_address,t_mapping(t_address,t_uint256))": {
+              "label": "mapping(address => mapping(address => uint256))"
+            },
+            "t_string_storage": {
+              "label": "string"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "FiatTokenV1Test": {
+        "src": "contracts/test/FiatTokenV1Test.sol:31",
+        "version": {
+          "withMetadata": "2d91699fec48b29ae14ac93802f1f654bd7a45aa7c3307a3cfd2c7f5abeb0e08",
+          "withoutMetadata": "3f3a130a12056bee6837f95d2e6fc0c660ff9dbcfd04b5caa1c588651c4dd003",
+          "linkedWithoutMetadata": "3f3a130a12056bee6837f95d2e6fc0c660ff9dbcfd04b5caa1c588651c4dd003"
+        },
+        "inherit": [
+          "FiatTokenV1",
+          "UUPSUpgradeable",
+          "ERC1967Upgrade",
+          "IERC1822Proxiable",
+          "EIP2612",
+          "EIP3009",
+          "EIP712Domain",
+          "AbstractFiatTokenV1",
+          "IERC20",
+          "Rescuable",
+          "Blocklistable",
+          "Pausable",
+          "Ownable",
+          "Context"
+        ],
+        "libraries": [],
+        "methods": [
+          "approveTest(address,address,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "FiatTokenV2Test": {
+        "src": "contracts/test/FiatTokenV2Test.sol:29",
+        "version": {
+          "withMetadata": "710b9eabf505e0292f839010d059f963986b1734162856815e08656133513e61",
+          "withoutMetadata": "eee458042eb4dfcc5fb639340ddfaf78e615008254d86dab67dd8500ac3ea66d",
+          "linkedWithoutMetadata": "eee458042eb4dfcc5fb639340ddfaf78e615008254d86dab67dd8500ac3ea66d"
+        },
+        "inherit": [
+          "FiatTokenV2",
+          "UUPSUpgradeable",
+          "ERC1967Upgrade",
+          "IERC1822Proxiable",
+          "EIP2612",
+          "EIP3009",
+          "EIP712Domain",
+          "AbstractFiatTokenV1",
+          "IERC20",
+          "Rescuable",
+          "Blocklistable",
+          "Pausable",
+          "Ownable",
+          "Context"
+        ],
+        "libraries": [],
+        "methods": [
+          "approveTest(address,address,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "IERC20Metadata": {
+        "src": "contracts/test/IERC20Metadata.sol:13",
+        "inherit": [
+          "IERC20"
+        ],
+        "libraries": [],
+        "methods": [
+          "name()",
+          "symbol()",
+          "decimals()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "UUPSUpgradeableUnsafeMock": {
+        "src": "contracts/test/UUPSUpgradeableMock.sol:7",
+        "version": {
+          "withMetadata": "93c0bab9fdfda6424ee10b91308185e8b74dbc7b5570753a79150c1a8361a803",
+          "withoutMetadata": "f5e5ccb0e07951072e4dace9b41cf8a11bf5ec79aae114b7801644fdc0b246b0",
+          "linkedWithoutMetadata": "f5e5ccb0e07951072e4dace9b41cf8a11bf5ec79aae114b7801644fdc0b246b0"
+        },
+        "inherit": [
+          "FiatTokenV1",
+          "UUPSUpgradeable",
+          "ERC1967Upgrade",
+          "IERC1822Proxiable",
+          "EIP2612",
+          "EIP3009",
+          "EIP712Domain",
+          "AbstractFiatTokenV1",
+          "IERC20",
+          "Rescuable",
+          "Blocklistable",
+          "Pausable",
+          "Ownable",
+          "Context"
+        ],
+        "libraries": [],
+        "methods": [
+          "upgradeTo(address)",
+          "upgradeToAndCall(address,bytes)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "ERC1967Upgrade": {
+        "src": "contracts/upgradeability/ERC1967Upgrade.sol:18",
+        "inherit": [],
+        "libraries": [
+          "StorageSlot",
+          "Address"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "ERC1967Upgrade",
+              "label": "_gap",
+              "type": "t_array(t_uint256)50_storage",
+              "src": "contracts/upgradeability/ERC1967Upgrade.sol:100"
+            }
+          ],
+          "types": {
+            "t_array(t_uint256)50_storage": {
+              "label": "uint256[50]"
+            },
+            "t_uint256": {
+              "label": "uint256"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "UUPSUpgradeable": {
+        "src": "contracts/upgradeability/UUPSUpgradeable.sol:21",
+        "inherit": [
+          "ERC1967Upgrade",
+          "IERC1822Proxiable"
+        ],
+        "libraries": [],
+        "methods": [
+          "proxiableUUID()",
+          "upgradeTo(address)",
+          "upgradeToAndCall(address,bytes)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "UUPSUpgradeable",
+              "label": "_gap",
+              "type": "t_array(t_uint256)50_storage",
+              "src": "contracts/upgradeability/UUPSUpgradeable.sol:117"
+            }
+          ],
+          "types": {
+            "t_array(t_uint256)50_storage": {
+              "label": "uint256[50]"
+            },
+            "t_uint256": {
+              "label": "uint256"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "IERC1822Proxiable": {
+        "src": "contracts/upgradeability/draft-IERC1822.sol:10",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "proxiableUUID()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "Address": {
+        "src": "contracts/util/Address.sol:9",
+        "version": {
+          "withMetadata": "09eb1a75c4fe4ada5ec11f12e29b8e4e02ec388c60df52f5796831b12029dd96",
+          "withoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db",
+          "linkedWithoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "delegatecall",
+            "src": "contracts/util/Address.sol:186"
+          }
+        ],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "Context": {
+        "src": "contracts/util/Context.sol:16",
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "Context",
+              "label": "__gap",
+              "type": "t_array(t_uint256)50_storage",
+              "src": "contracts/util/Context.sol:25"
+            }
+          ],
+          "types": {
+            "t_array(t_uint256)50_storage": {
+              "label": "uint256[50]"
+            },
+            "t_uint256": {
+              "label": "uint256"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "ECRecover": {
+        "src": "contracts/util/ECRecover.sol:32",
+        "version": {
+          "withMetadata": "190d8d04388646801dc4cc572a7369745badb6ed8d3b877d3b0983f30a00e210",
+          "withoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db",
+          "linkedWithoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "EIP712": {
+        "src": "contracts/util/EIP712.sol:33",
+        "version": {
+          "withMetadata": "30fc20a5669bdb0976faae319104bcb954ebf29281c04c186224a985202848c2",
+          "withoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db",
+          "linkedWithoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db"
+        },
+        "inherit": [],
+        "libraries": [
+          "ECRecover"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "IERC20": {
+        "src": "contracts/util/IERC20.sol:9",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "totalSupply()",
+          "balanceOf(address)",
+          "transfer(address,uint256)",
+          "allowance(address,address)",
+          "approve(address,uint256)",
+          "transferFrom(address,address,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "SafeERC20": {
+        "src": "contracts/util/SafeERC20.sol:18",
+        "version": {
+          "withMetadata": "fd87ec81c6d7978e2bddebf73068a893900c96b4869a7a587c361e6adc6ce886",
+          "withoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db",
+          "linkedWithoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db"
+        },
+        "inherit": [],
+        "libraries": [
+          "Address"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "StorageSlot": {
+        "src": "contracts/util/StorageSlot.sol:31",
+        "version": {
+          "withMetadata": "632f387697acac6136121726dbfe15222d27cb9ef077eb5c4f0faa15dbacd1fd",
+          "withoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db",
+          "linkedWithoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "AbstractFiatTokenV1": {
+        "src": "contracts/v1/AbstractFiatTokenV1.sol:29",
+        "inherit": [
+          "IERC20"
+        ],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "Blocklistable": {
+        "src": "contracts/v1/Blocklistable.sol:33",
+        "version": {
+          "withMetadata": "79836620887d312a1b7104f08dd789882f4e5fa80147abe3717c6f4064ae9d20",
+          "withoutMetadata": "3bd64c004c5206b675a5238c6b845e53cd59d5918feff6b3ed465ea98a201e6e",
+          "linkedWithoutMetadata": "3bd64c004c5206b675a5238c6b845e53cd59d5918feff6b3ed465ea98a201e6e"
+        },
+        "inherit": [
+          "Ownable",
+          "Context"
+        ],
+        "libraries": [],
+        "methods": [
+          "isBlocklisted(address)",
+          "blocklist(address)",
+          "unBlocklist(address)",
+          "updateBlocklister(address)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "Blocklistable",
+              "label": "blocklister",
+              "type": "t_address",
+              "src": "contracts/v1/Blocklistable.sol:34"
+            },
+            {
+              "contract": "Blocklistable",
+              "label": "blocklisted",
+              "type": "t_mapping(t_address,t_bool)",
+              "src": "contracts/v1/Blocklistable.sol:35"
+            },
+            {
+              "contract": "Blocklistable",
+              "label": "__gap",
+              "type": "t_array(t_uint256)50_storage",
+              "src": "contracts/v1/Blocklistable.sol:99"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address"
+            },
+            "t_mapping(t_address,t_bool)": {
+              "label": "mapping(address => bool)"
+            },
+            "t_bool": {
+              "label": "bool"
+            },
+            "t_array(t_uint256)50_storage": {
+              "label": "uint256[50]"
+            },
+            "t_uint256": {
+              "label": "uint256"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "EIP2612": {
+        "src": "contracts/v1/EIP2612.sol:35",
+        "inherit": [
+          "EIP712Domain",
+          "AbstractFiatTokenV1",
+          "IERC20"
+        ],
+        "libraries": [
+          "EIP712"
+        ],
+        "methods": [
+          "nonces(address)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "EIP2612",
+              "label": "_permitNonces",
+              "type": "t_mapping(t_address,t_uint256)",
+              "src": "contracts/v1/EIP2612.sol:40"
+            },
+            {
+              "contract": "EIP2612",
+              "label": "__gap",
+              "type": "t_array(t_uint256)50_storage",
+              "src": "contracts/v1/EIP2612.sol:88"
+            }
+          ],
+          "types": {
+            "t_mapping(t_address,t_uint256)": {
+              "label": "mapping(address => uint256)"
+            },
+            "t_address": {
+              "label": "address"
+            },
+            "t_uint256": {
+              "label": "uint256"
+            },
+            "t_array(t_uint256)50_storage": {
+              "label": "uint256[50]"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "EIP3009": {
+        "src": "contracts/v1/EIP3009.sol:37",
+        "inherit": [
+          "EIP712Domain",
+          "AbstractFiatTokenV1",
+          "IERC20"
+        ],
+        "libraries": [
+          "EIP712"
+        ],
+        "methods": [
+          "authorizationState(address,bytes32)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "EIP3009",
+              "label": "_authorizationStates",
+              "type": "t_mapping(t_address,t_mapping(t_bytes32,t_bool))",
+              "src": "contracts/v1/EIP3009.sol:53"
+            },
+            {
+              "contract": "EIP3009",
+              "label": "__gap",
+              "type": "t_array(t_uint256)50_storage",
+              "src": "contracts/v1/EIP3009.sol:248"
+            }
+          ],
+          "types": {
+            "t_mapping(t_address,t_mapping(t_bytes32,t_bool))": {
+              "label": "mapping(address => mapping(bytes32 => bool))"
+            },
+            "t_address": {
+              "label": "address"
+            },
+            "t_mapping(t_bytes32,t_bool)": {
+              "label": "mapping(bytes32 => bool)"
+            },
+            "t_bytes32": {
+              "label": "bytes32"
+            },
+            "t_bool": {
+              "label": "bool"
+            },
+            "t_array(t_uint256)50_storage": {
+              "label": "uint256[50]"
+            },
+            "t_uint256": {
+              "label": "uint256"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "EIP712Domain": {
+        "src": "contracts/v1/EIP712Domain.sol:32",
+        "version": {
+          "withMetadata": "a3a152d39f64d980f5aaadc9c0cbc9c285bf11bff8f3dd6413598f6a9f7d30c7",
+          "withoutMetadata": "553b9266222210c4bedfe1e0ad935b87f628088ef49ea6417b15774ccaa5006b",
+          "linkedWithoutMetadata": "553b9266222210c4bedfe1e0ad935b87f628088ef49ea6417b15774ccaa5006b"
+        },
+        "inherit": [],
+        "libraries": [
+          "EIP712"
+        ],
+        "methods": [
+          "_domainSeparatorV4()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "EIP712Domain",
+              "label": "DOMAIN_SEPARATOR",
+              "type": "t_bytes32",
+              "src": "contracts/v1/EIP712Domain.sol:36"
+            },
+            {
+              "contract": "EIP712Domain",
+              "label": "CHAIN_ID",
+              "type": "t_uint256",
+              "src": "contracts/v1/EIP712Domain.sol:37"
+            },
+            {
+              "contract": "EIP712Domain",
+              "label": "NAME",
+              "type": "t_string_storage",
+              "src": "contracts/v1/EIP712Domain.sol:38"
+            },
+            {
+              "contract": "EIP712Domain",
+              "label": "VERSION",
+              "type": "t_string_storage",
+              "src": "contracts/v1/EIP712Domain.sol:39"
+            },
+            {
+              "contract": "EIP712Domain",
+              "label": "__gap",
+              "type": "t_array(t_uint256)50_storage",
+              "src": "contracts/v1/EIP712Domain.sol:49"
+            }
+          ],
+          "types": {
+            "t_bytes32": {
+              "label": "bytes32"
+            },
+            "t_uint256": {
+              "label": "uint256"
+            },
+            "t_string_storage": {
+              "label": "string"
+            },
+            "t_array(t_uint256)50_storage": {
+              "label": "uint256[50]"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "FiatTokenV1": {
+        "src": "contracts/v1/FiatTokenV1.sol:40",
+        "version": {
+          "withMetadata": "0c581709799ce5d5354abf503c73ec60ce8de1f067caf08e3fe66ed960630757",
+          "withoutMetadata": "f8b91cf5e3ddb5fa2d7f418f38e20c1c7f3b3efdf6c070111fd14ebfdcc475d5",
+          "linkedWithoutMetadata": "f8b91cf5e3ddb5fa2d7f418f38e20c1c7f3b3efdf6c070111fd14ebfdcc475d5"
+        },
+        "inherit": [
+          "UUPSUpgradeable",
+          "ERC1967Upgrade",
+          "IERC1822Proxiable",
+          "EIP2612",
+          "EIP3009",
+          "EIP712Domain",
+          "AbstractFiatTokenV1",
+          "IERC20",
+          "Rescuable",
+          "Blocklistable",
+          "Pausable",
+          "Ownable",
+          "Context"
+        ],
+        "libraries": [
+          "EIP712"
+        ],
+        "methods": [
+          "initialize(string,string,string,uint8,address,address,address,address)",
+          "mint(address,uint256)",
+          "minterAllowance(address)",
+          "isMinter(address)",
+          "allowance(address,address)",
+          "totalSupply()",
+          "balanceOf(address)",
+          "approve(address,uint256)",
+          "transferFrom(address,address,uint256)",
+          "transfer(address,uint256)",
+          "configureMinter(address,uint256)",
+          "removeMinter(address)",
+          "burn(uint256)",
+          "updateMasterMinter(address)",
+          "increaseAllowance(address,uint256)",
+          "decreaseAllowance(address,uint256)",
+          "transferWithAuthorization(address,address,uint256,uint256,uint256,bytes32,uint8,bytes32,bytes32)",
+          "receiveWithAuthorization(address,address,uint256,uint256,uint256,bytes32,uint8,bytes32,bytes32)",
+          "cancelAuthorization(address,bytes32,uint8,bytes32,bytes32)",
+          "permit(address,address,uint256,uint256,uint8,bytes32,bytes32)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "state-variable-assignment",
+            "name": "totalSupply_",
+            "src": "contracts/v1/FiatTokenV1.sol:58"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "contract": "FiatTokenV1",
+              "label": "name",
+              "type": "t_string_storage",
+              "src": "contracts/v1/FiatTokenV1.sol:49"
+            },
+            {
+              "contract": "FiatTokenV1",
+              "label": "symbol",
+              "type": "t_string_storage",
+              "src": "contracts/v1/FiatTokenV1.sol:50"
+            },
+            {
+              "contract": "FiatTokenV1",
+              "label": "decimals",
+              "type": "t_uint8",
+              "src": "contracts/v1/FiatTokenV1.sol:51"
+            },
+            {
+              "contract": "FiatTokenV1",
+              "label": "currency",
+              "type": "t_string_storage",
+              "src": "contracts/v1/FiatTokenV1.sol:52"
+            },
+            {
+              "contract": "FiatTokenV1",
+              "label": "masterMinter",
+              "type": "t_address",
+              "src": "contracts/v1/FiatTokenV1.sol:53"
+            },
+            {
+              "contract": "FiatTokenV1",
+              "label": "initialized",
+              "type": "t_bool",
+              "src": "contracts/v1/FiatTokenV1.sol:54"
+            },
+            {
+              "contract": "FiatTokenV1",
+              "label": "balances",
+              "type": "t_mapping(t_address,t_uint256)",
+              "src": "contracts/v1/FiatTokenV1.sol:56"
+            },
+            {
+              "contract": "FiatTokenV1",
+              "label": "allowed",
+              "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))",
+              "src": "contracts/v1/FiatTokenV1.sol:57"
+            },
+            {
+              "contract": "FiatTokenV1",
+              "label": "totalSupply_",
+              "type": "t_uint256",
+              "src": "contracts/v1/FiatTokenV1.sol:58"
+            },
+            {
+              "contract": "FiatTokenV1",
+              "label": "minters",
+              "type": "t_mapping(t_address,t_bool)",
+              "src": "contracts/v1/FiatTokenV1.sol:59"
+            },
+            {
+              "contract": "FiatTokenV1",
+              "label": "minterAllowed",
+              "type": "t_mapping(t_address,t_uint256)",
+              "src": "contracts/v1/FiatTokenV1.sol:60"
+            },
+            {
+              "contract": "FiatTokenV1",
+              "label": "__gap",
+              "type": "t_array(t_uint256)50_storage",
+              "src": "contracts/v1/FiatTokenV1.sol:573"
+            }
+          ],
+          "types": {
+            "t_string_storage": {
+              "label": "string"
+            },
+            "t_uint8": {
+              "label": "uint8"
+            },
+            "t_address": {
+              "label": "address"
+            },
+            "t_bool": {
+              "label": "bool"
+            },
+            "t_mapping(t_address,t_uint256)": {
+              "label": "mapping(address => uint256)"
+            },
+            "t_uint256": {
+              "label": "uint256"
+            },
+            "t_mapping(t_address,t_mapping(t_address,t_uint256))": {
+              "label": "mapping(address => mapping(address => uint256))"
+            },
+            "t_mapping(t_address,t_bool)": {
+              "label": "mapping(address => bool)"
+            },
+            "t_array(t_uint256)50_storage": {
+              "label": "uint256[50]"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "Ownable": {
+        "src": "contracts/v1/Ownable.sol:20",
+        "inherit": [
+          "Context"
+        ],
+        "libraries": [],
+        "methods": [
+          "owner()",
+          "transferOwnership(address)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "Ownable",
+            "src": "contracts/v1/Ownable.sol:28"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "contract": "Ownable",
+              "label": "_owner",
+              "type": "t_address",
+              "src": "contracts/v1/Ownable.sol:21"
+            },
+            {
+              "contract": "Ownable",
+              "label": "__gap",
+              "type": "t_array(t_uint256)50_storage",
+              "src": "contracts/v1/Ownable.sol:66"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address"
+            },
+            "t_array(t_uint256)50_storage": {
+              "label": "uint256[50]"
+            },
+            "t_uint256": {
+              "label": "uint256"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "Pausable": {
+        "src": "contracts/v1/Pausable.sol:43",
+        "version": {
+          "withMetadata": "941c668212c8cabd7586d38709cc23d8eae2d32027b0b3f9075ff00c4bb15222",
+          "withoutMetadata": "45ea7a919889584908724b0c64d4b3aa7c90391c854f9c2d88fb4817ded24233",
+          "linkedWithoutMetadata": "45ea7a919889584908724b0c64d4b3aa7c90391c854f9c2d88fb4817ded24233"
+        },
+        "inherit": [
+          "Ownable",
+          "Context"
+        ],
+        "libraries": [],
+        "methods": [
+          "pause()",
+          "unpause()",
+          "updatePauser(address)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "state-variable-assignment",
+            "name": "paused",
+            "src": "contracts/v1/Pausable.sol:49"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "contract": "Pausable",
+              "label": "pauser",
+              "type": "t_address",
+              "src": "contracts/v1/Pausable.sol:48"
+            },
+            {
+              "contract": "Pausable",
+              "label": "paused",
+              "type": "t_bool",
+              "src": "contracts/v1/Pausable.sol:49"
+            },
+            {
+              "contract": "Pausable",
+              "label": "__gap",
+              "type": "t_array(t_uint256)50_storage",
+              "src": "contracts/v1/Pausable.sol:95"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address"
+            },
+            "t_bool": {
+              "label": "bool"
+            },
+            "t_array(t_uint256)50_storage": {
+              "label": "uint256[50]"
+            },
+            "t_uint256": {
+              "label": "uint256"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "Rescuable": {
+        "src": "contracts/v1/Rescuable.sol:31",
+        "version": {
+          "withMetadata": "3d16ce959e1fc41eb609c3b4c449ae35f4b2f90a57547be6f66674437ed2611c",
+          "withoutMetadata": "bf9d5499d0e86feef5aa0ce8c99c218943517c8636e3b8d77cd957300b8401f9",
+          "linkedWithoutMetadata": "bf9d5499d0e86feef5aa0ce8c99c218943517c8636e3b8d77cd957300b8401f9"
+        },
+        "inherit": [
+          "Ownable",
+          "Context"
+        ],
+        "libraries": [
+          "SafeERC20"
+        ],
+        "methods": [
+          "rescuer()",
+          "rescueERC20(address,address,uint256)",
+          "updateRescuer(address)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "Rescuable",
+              "label": "_rescuer",
+              "type": "t_address",
+              "src": "contracts/v1/Rescuable.sol:34"
+            },
+            {
+              "contract": "Rescuable",
+              "label": "__gap",
+              "type": "t_array(t_uint256)50_storage",
+              "src": "contracts/v1/Rescuable.sol:81"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address"
+            },
+            "t_array(t_uint256)50_storage": {
+              "label": "uint256[50]"
+            },
+            "t_uint256": {
+              "label": "uint256"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "FiatTokenV2": {
+        "src": "contracts/v2/FiatTokenV2.sol:40",
+        "version": {
+          "withMetadata": "bc9bd08d4e34666bc7ff1fc5022c8cb1b8b8775542dcfb721b291b4530302abb",
+          "withoutMetadata": "114b050223cc2168a8814d3e499cc02630ad5ac74bb7fc4d1f80baa777bd3950",
+          "linkedWithoutMetadata": "114b050223cc2168a8814d3e499cc02630ad5ac74bb7fc4d1f80baa777bd3950"
+        },
+        "inherit": [
+          "UUPSUpgradeable",
+          "ERC1967Upgrade",
+          "IERC1822Proxiable",
+          "EIP2612",
+          "EIP3009",
+          "EIP712Domain",
+          "AbstractFiatTokenV1",
+          "IERC20",
+          "Rescuable",
+          "Blocklistable",
+          "Pausable",
+          "Ownable",
+          "Context"
+        ],
+        "libraries": [
+          "EIP712"
+        ],
+        "methods": [
+          "initialize(string,string,string,uint8,address,address,address,address)",
+          "mint(address,uint256)",
+          "minterAllowance(address)",
+          "isMinter(address)",
+          "allowance(address,address)",
+          "totalSupply()",
+          "balanceOf(address)",
+          "approve(address,uint256)",
+          "transferFrom(address,address,uint256)",
+          "transfer(address,uint256)",
+          "configureMinter(address,uint256)",
+          "removeMinter(address)",
+          "burn(uint256)",
+          "updateMasterMinter(address)",
+          "increaseAllowance(address,uint256)",
+          "decreaseAllowance(address,uint256)",
+          "transferWithAuthorization(address,address,uint256,uint256,uint256,bytes32,uint8,bytes32,bytes32)",
+          "receiveWithAuthorization(address,address,uint256,uint256,uint256,bytes32,uint8,bytes32,bytes32)",
+          "cancelAuthorization(address,bytes32,uint8,bytes32,bytes32)",
+          "permit(address,address,uint256,uint256,uint8,bytes32,bytes32)",
+          "isWhitelisted(address)",
+          "whitelist(address)",
+          "unWhitelist(address)",
+          "updateWhitelister(address)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "state-variable-assignment",
+            "name": "totalSupply_",
+            "src": "contracts/v2/FiatTokenV2.sol:58"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "contract": "FiatTokenV2",
+              "label": "name",
+              "type": "t_string_storage",
+              "src": "contracts/v2/FiatTokenV2.sol:49"
+            },
+            {
+              "contract": "FiatTokenV2",
+              "label": "symbol",
+              "type": "t_string_storage",
+              "src": "contracts/v2/FiatTokenV2.sol:50"
+            },
+            {
+              "contract": "FiatTokenV2",
+              "label": "decimals",
+              "type": "t_uint8",
+              "src": "contracts/v2/FiatTokenV2.sol:51"
+            },
+            {
+              "contract": "FiatTokenV2",
+              "label": "currency",
+              "type": "t_string_storage",
+              "src": "contracts/v2/FiatTokenV2.sol:52"
+            },
+            {
+              "contract": "FiatTokenV2",
+              "label": "masterMinter",
+              "type": "t_address",
+              "src": "contracts/v2/FiatTokenV2.sol:53"
+            },
+            {
+              "contract": "FiatTokenV2",
+              "label": "initialized",
+              "type": "t_bool",
+              "src": "contracts/v2/FiatTokenV2.sol:54"
+            },
+            {
+              "contract": "FiatTokenV2",
+              "label": "balances",
+              "type": "t_mapping(t_address,t_uint256)",
+              "src": "contracts/v2/FiatTokenV2.sol:56"
+            },
+            {
+              "contract": "FiatTokenV2",
+              "label": "allowed",
+              "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))",
+              "src": "contracts/v2/FiatTokenV2.sol:57"
+            },
+            {
+              "contract": "FiatTokenV2",
+              "label": "totalSupply_",
+              "type": "t_uint256",
+              "src": "contracts/v2/FiatTokenV2.sol:58"
+            },
+            {
+              "contract": "FiatTokenV2",
+              "label": "minters",
+              "type": "t_mapping(t_address,t_bool)",
+              "src": "contracts/v2/FiatTokenV2.sol:59"
+            },
+            {
+              "contract": "FiatTokenV2",
+              "label": "minterAllowed",
+              "type": "t_mapping(t_address,t_uint256)",
+              "src": "contracts/v2/FiatTokenV2.sol:60"
+            },
+            {
+              "contract": "FiatTokenV2",
+              "label": "whitelisted",
+              "type": "t_mapping(t_address,t_bool)",
+              "src": "contracts/v2/FiatTokenV2.sol:62"
+            },
+            {
+              "contract": "FiatTokenV2",
+              "label": "whitelister",
+              "type": "t_address",
+              "src": "contracts/v2/FiatTokenV2.sol:63"
+            },
+            {
+              "contract": "FiatTokenV2",
+              "label": "__gap",
+              "type": "t_array(t_uint256)50_storage",
+              "src": "contracts/v2/FiatTokenV2.sol:668"
+            }
+          ],
+          "types": {
+            "t_string_storage": {
+              "label": "string"
+            },
+            "t_uint8": {
+              "label": "uint8"
+            },
+            "t_address": {
+              "label": "address"
+            },
+            "t_bool": {
+              "label": "bool"
+            },
+            "t_mapping(t_address,t_uint256)": {
+              "label": "mapping(address => uint256)"
+            },
+            "t_uint256": {
+              "label": "uint256"
+            },
+            "t_mapping(t_address,t_mapping(t_address,t_uint256))": {
+              "label": "mapping(address => mapping(address => uint256))"
+            },
+            "t_mapping(t_address,t_bool)": {
+              "label": "mapping(address => bool)"
+            },
+            "t_array(t_uint256)50_storage": {
+              "label": "uint256[50]"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "FiatTokenV2test": {
+        "src": "contracts/v2/FiatTokenV2test.sol:8",
+        "version": {
+          "withMetadata": "515c050be5d18cf99368793594d813d5b6b8c5ea3ed3fab7d94b0f8e6ae84420",
+          "withoutMetadata": "fbc271fe7e1f35dbb420d33ee909d36ad8f4a19810b3687edc712c3c80c8a724",
+          "linkedWithoutMetadata": "fbc271fe7e1f35dbb420d33ee909d36ad8f4a19810b3687edc712c3c80c8a724"
+        },
+        "inherit": [
+          "FiatTokenV1",
+          "UUPSUpgradeable",
+          "ERC1967Upgrade",
+          "IERC1822Proxiable",
+          "EIP2612",
+          "EIP3009",
+          "EIP712Domain",
+          "AbstractFiatTokenV1",
+          "IERC20",
+          "Rescuable",
+          "Blocklistable",
+          "Pausable",
+          "Ownable",
+          "Context"
+        ],
+        "libraries": [],
+        "methods": [
+          "setName2(string)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "FiatTokenV2test",
+              "label": "name2",
+              "type": "t_string_storage",
+              "src": "contracts/v2/FiatTokenV2test.sol:9"
+            }
+          ],
+          "types": {
+            "t_string_storage": {
+              "label": "string"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      }
+    }
+  ]
+}
