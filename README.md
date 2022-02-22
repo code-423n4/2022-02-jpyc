@@ -289,6 +289,3 @@ If you want more information about how the contracts are forked or test files, s
 
 Copyright © 2022 [JPYC](https://jpyc.jp). <br />
 This project is [MIT](https://github.com/jcam1/JPYCv2/blob/master/LICENSE) licensed.
-
-# Our Website
-http://jpyc.jp
