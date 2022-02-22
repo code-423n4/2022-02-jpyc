@@ -88,17 +88,8 @@ This repo will be made public before the start of the contest. (C4 delete this l
 Here is the list of main contracts in the protocol.
 | filename                                                                    | language | code       | comment    | blank      | total      |
 | --- | --- | --- | --- | --- | --- |
-| JPYCv2/contracts/README.md                          | Markdown |         69 |          0 |          5 |         74 |
 | JPYCv2/contracts/proxy/ERC1967Proxy.sol             | Solidity |         12 |         17 |          4 |         33 |
 | JPYCv2/contracts/proxy/Proxy.sol                    | Solidity |         29 |         47 |         10 |         86 |
-| JPYCv2/contracts/test/ContractCall.sol              | Solidity |          8 |          1 |          4 |         13 |
-| JPYCv2/contracts/test/DummyERC20.sol                | Solidity |         11 |         23 |          5 |         39 |
-| JPYCv2/contracts/test/ECRecoverTest.sol             | Solidity |         12 |         23 |          3 |         38 |
-| JPYCv2/contracts/test/ERC20.sol                     | Solidity |        122 |        194 |         39 |        355 |
-| JPYCv2/contracts/test/FiatTokenV1Test.sol           | Solidity |          7 |         23 |          5 |         35 |
-| JPYCv2/contracts/test/FiatTokenV2Test.sol           | Solidity |         11 |         23 |          4 |         38 |
-| JPYCv2/contracts/test/IERC20Metadata.sol            | Solidity |          7 |         16 |          5 |         28 |
-| JPYCv2/contracts/test/UUPSUpgradeableMock.sol       | Solidity |         10 |          1 |          4 |         15 |
 | JPYCv2/contracts/upgradeability/ERC1967Upgrade.sol  | Solidity |         48 |         43 |         11 |        102 |
 | JPYCv2/contracts/upgradeability/IBeacon.sol         | Solidity |          4 |         10 |          2 |         16 |
 | JPYCv2/contracts/upgradeability/UUPSUpgradeable.sol | Solidity |         49 |         59 |         11 |        119 |
@@ -121,9 +112,6 @@ Here is the list of main contracts in the protocol.
 | JPYCv2/contracts/v1/Rescuable.sol                   | Solidity |         32 |         40 |         10 |         82 |
 | JPYCv2/contracts/v2/FiatTokenV2.sol                 | Solidity |        419 |        205 |         46 |        670 |
 | JPYCv2/contracts/v2/FiatTokenV2test.sol             | Solidity |          8 |          2 |          5 |         15 |
-| Total                                                                       |          |      1,813 |      1,584 |        348 |      3,745 
-
-
 
 
 ## hardhat usage
