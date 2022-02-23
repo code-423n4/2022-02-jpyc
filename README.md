@@ -143,7 +143,7 @@ Only the rescuer is able to send ERC20 tokens that were mistakenly sent to the p
 The contract uses the `safeTransfer` function.
 #### EIP712Domain.sol
 https://github.com/ethereum/EIPs/blob/master/EIPS/eip-712.md  
-The contract stores EIP712 Domain Separator. 
+The contract stores EIP712 Domain Separator. If the chain ID is different, it will be recalculated.
 EIP3009 and EIP2612 require EIP712 Domain.
 #### EIP3009.sol
 https://eips.ethereum.org/EIPS/eip-3009  
