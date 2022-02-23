@@ -7,7 +7,10 @@
 - Starts February 24 2022 00:00 UTC
 - Ends February 26 2022 23:59 UTC
 
-Previous JPYC's information, white paper, and more can be found [here](https://jpyc.jp). 
+## Background 
+JPYC is the first of its kind as a Japanese yen stable coin in Japan on Ethereum. Legally it is "Prepaid payment instrument for own business" in Japan. JPYC has a current working product as we call it "previous JPYC". Previous JPYC's information, white paper, and more can be found [here](https://jpyc.jp). 
+
+This time we decided to deploy a new version of JPYC with totally new smart contracts.
 ## Brief introduction
 JPYC protocol is an ERC20 compatible token. It allows minting of tokens by multiple entities, pausing all activity, freezing of individual addresses, rescuing of tokens and UUPS proxy pattern to upgrade the contract so that bugs can be fixed or features added. 
 ## Protocol contracts' structure
