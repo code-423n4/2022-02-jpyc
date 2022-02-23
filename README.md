@@ -8,7 +8,7 @@
 - Ends February 26 2022 23:59 UTC
 
 ## Background 
-JPYC is the first of its kind as a Japanese yen stable coin in Japan on Ethereum. Legally it is "Prepaid payment instrument for own business" in Japan. JPYC has a current working product as we call it "previous JPYC". Previous JPYC's information, white paper, and more can be found [here](https://jpyc.jp). 
+JPYC is the first of its kind as a Japanese yen stable coin in Japan on Ethereum. Legally it is "Prepaid payment instrument for own business" in Japan. JPYC has a current working product as we call it "previous JPYC" here. Previous JPYC's information, white paper, and more can be found [here](https://jpyc.jp). 
 
 This time we decided to deploy a new version of JPYC with totally new smart contracts.
 ## Brief introduction
@@ -97,7 +97,7 @@ https://github.com/OpenZeppelin/openzeppelin-contracts/tree/master/contracts/pro
 We adopted OpenZeppelin's library to implement the UUPS upgradeable pattern. The only thing we have changed is we added `uint256[50] private _gap;` as the last part of several contracts in order to prepare for future upgradings(e.g. adding state variables) and be aligned with Openzeppelin's code.
 
 #### Proxy.sol
-- This contract provides a `_fallback` function that delegates all calls from proxy contract to implementation contract using `_delegate` function. The virtual `_implementation` function needs to be overrode. 
+This contract provides a `_fallback` function that delegates all calls from proxy contract to implementation contract using `_delegate` function. The virtual `_implementation` function needs to be overrode. 
 #### UUPSUpgradeable.sol
 This is an upgradeability mechanism designed for UUPS proxies. The contract is inherited by the implementation contract(`FiatTokenV1`). By inheriting this contract, implementation contract acquires upgradeability. 
 
@@ -135,8 +135,8 @@ A contract that manages the access rights of the pausability.
 If the pauser pause FiatTokenV1 contract, some functions is restricted.
 #### Blocklistable.sol
 A contract that manages the access rights of the blocklistability. 
-If you are registered in the blocklist, you will not be able to use some functions. 
-`FiatTokenV1` contract is blocklisted in the init funciton.
+If you are registered in the blocklist, you will not be able to move your funds, etc. 
+`FiatTokenV1` contract is blocklisted in the `initialise` funciton.
 #### Rescuable.sol
 A contract that manages the access rights of rescuing tokens. 
 Only the rescuer is able to send ERC20 tokens that were mistakenly sent to the proxy contract's address. 
@@ -185,9 +185,9 @@ The contract uses v, r and s to recover the address and verify that it matches t
 - Override the `_authorizeUpgrade` function with `onlyOwner` modifier.
 
 #### FiatTokenV2
-- It is an assumed upgraded version of FiatTokenV1 with a new functionality `whitelist` we may consider to add in the future.
-- It allows only users who are whitelisted to send or approve over 100,000 token to other user.
-- Other than that everything is the same as FiatTokenV1.
+- It is an assumed upgraded version of `FiatTokenV1` with a new functionality `whitelist` we may consider to add in the future.
+- It allows only users who are whitelisted to interact with the contracts, e.g. send or approve over 100,000 token to other user.
+- Other than that everything is the same as `FiatTokenV1`.
 
 ### Note
 - We partially used `ERC1967Upgradeable.sol` and `IBeacon.sol`’s code, but it is used totally because we selected UUPS upgradeable pattern. Functions like Beacon or Transparent pattern’s parts are not used in the current situation. We removed the unused parts.
