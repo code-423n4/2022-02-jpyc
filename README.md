@@ -190,7 +190,7 @@ The contract uses v, r and s to recover the address and verify that it matches t
 - Other than that everything is the same as `FiatTokenV1`.
 
 ### Note
-- We partially used `ERC1967Upgradeable.sol` and `IBeacon.sol`’s code, but it is not used totally because we selected UUPS upgradeable pattern. Functions like Beacon or Transparent pattern’s parts are not used in the current situation. We removed the unused parts.
+- We included `ERC1967Upgradeable.sol` and `IBeacon.sol`’s code before, but it is not used totally because we selected UUPS upgradeable pattern. Functions like Beacon or Transparent pattern’s parts are not used in the current situation. We removed the unused parts.
 
 
 ## How to start
@@ -201,8 +201,6 @@ Install nodejs, refer to [nodejs](https://nodejs.org/en/).
 git clone https://github.com/code-423n4/2022-02-jpyc.git
 
 cd 2022-02-jpyc
-
-cd contracts
 
 npm i
 
