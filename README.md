@@ -26,7 +26,6 @@ Here is the list of main contracts in the protocol.
 | JPYCv2/contracts/proxy/ERC1967Proxy.sol             | Solidity |         12 |         17 |          4 |         33 |
 | JPYCv2/contracts/proxy/Proxy.sol                    | Solidity |         29 |         47 |         10 |         86 |
 | JPYCv2/contracts/upgradeability/ERC1967Upgrade.sol  | Solidity |         48 |         43 |         11 |        102 |
-| JPYCv2/contracts/upgradeability/IBeacon.sol         | Solidity |          4 |         10 |          2 |         16 |
 | JPYCv2/contracts/upgradeability/UUPSUpgradeable.sol | Solidity |         49 |         59 |         11 |        119 |
 | JPYCv2/contracts/upgradeability/draft-IERC1822.sol  | Solidity |          4 |         14 |          2 |         20 |
 | JPYCv2/contracts/util/Address.sol                   | Solidity |         85 |        114 |         18 |        217 |
@@ -47,7 +46,6 @@ Here is the list of main contracts in the protocol.
 | JPYCv2/contracts/v1/Rescuable.sol                   | Solidity |         32 |         40 |         10 |         82 |
 | JPYCv2/contracts/v2/FiatTokenV2.sol                 | Solidity |        419 |        205 |         46 |        670 |
 | JPYCv2/contracts/v2/FiatTokenV2test.sol             | Solidity |          8 |          2 |          5 |         15 |
-| Total                                               |          |      1,813 |      1,584 |        348 |      3,745 
 
 
 ## Proxy
