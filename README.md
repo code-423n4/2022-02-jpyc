@@ -15,7 +15,8 @@ This time we decided to deploy a new version of JPYC with totally new smart cont
 JPYC protocol is an ERC20 compatible token. It allows minting of tokens by multiple entities, pausing all activity, freezing of individual addresses, rescuing of tokens and UUPS proxy pattern to upgrade the contract so that bugs can be fixed or features added. 
 ## Protocol contracts' structure
 Protocol's contracts, Libraries and interfaces are below.
-![contractArchitecture](contractArchitecture.drawio.svg)
+
+![contractArchitecture drawio](https://user-images.githubusercontent.com/3477197/155443184-0d44f7a9-aba8-49c2-8483-90e5877c2207.jpg)
 
 ## About solidity's version
 According to [Openzeppelin's recent update](https://github.com/OpenZeppelin/openzeppelin-contracts/commit/e192fac2769386b7d4b61a3541073ab47bb7723a) and [this contract's version](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/e192fac2769386b7d4b61a3541073ab47bb7723a/contracts/proxy/ERC1967/ERC1967Upgrade.sol#L17). We need to keep the solidity version equal to or higher than `pragma solidity 0.8.2`. We decided to use the comparatively new version of `0.8.11`.
@@ -65,7 +66,8 @@ Here is the list of main contracts in the protocol.
 <br>
 
 
-![TransparentPattern](./upgradeablePattern.drawio.svg)
+![upgradeablePattern drawio](https://user-images.githubusercontent.com/3477197/155443023-e4d947f6-8db6-4350-835d-ef35da9ceeea.jpg)
+
 
 ### Transparent Proxy Pattern
 
