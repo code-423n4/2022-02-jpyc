@@ -1,0 +1,88 @@
+==============================================================
+Guild: Code4rena
+Channel: ARCHIVE-Q1-2022 / ☑jpyc-feb24
+==============================================================
+
+[22-Feb-22 10:21 AM] itsmetechjay | C4#5294
+👋 Hello and welcome to the contest channel for the $30K USDC **JPYC **contest!
+
+📆 Contest opens February 24, 2022, at 0:00 UTC and runs through February 26, 2022 at 23:59 UTC (3 days).
+
+Please give a warm welcome to the JPYC team, particularly @juliaaa and @ぶち who will be available for questions either here in the channel or via DM. 
+
+We'll be posting relevant links, documentation, etc. here, so if you intend to participate in this contest, consider enabling notifications for this channel. 🐺 ⏰
+
+{Reactions}
+🥳 (10) 
+
+[23-Feb-22 04:44 PM] juliaaa#8704
+Hi, everyone! Me @juliaaa and @ぶち are from JPYC team. If you have questions please ask here in the channel or via DM. :hi5:
+
+{Reactions}
+👋 (7) 👍 (3) 
+
+[24-Feb-22 07:25 PM] Rhynorater#6461
+もし大丈夫だったら日本語で質問しても宜しいですか？このような場面で日本語を練習する機会はあまりないんです。
+
+{Reactions}
+✨ (3) 
+
+[24-Feb-22 07:27 PM] Rhynorater#6461
+やぱりこのプロジェクトで働いてる方の英語のほうが自分の日本語より上手なのに
+
+
+[24-Feb-22 07:33 PM] Rhynorater#6461
+今一番明らかにしてほしいのはどれのコントラクトが変更されたかです。カスタムの部分やカスタムのコントラクトをわかったらその方に注力します。
+
+
+[24-Feb-22 09:07 PM] ぶち#6270
+日本語で質問していただき光栄です！日本語でも全く問題ありません。
+https://github.com/code-423n4/2022-02-jpyc/blob/main/contracts/README.md
+こちらのリンクを参照してみてください。全てのコントラクトの元となるコントラクトのコードのリンクがあります。forkしているかどうかも書いています。
+
+I am honored to ask you a question in Japanese! There is no problem in Japanese.
+https://github.com/code-423n4/2022-02-jpyc/blob/main/contracts/README.md
+Please refer to this link. There are links to the code of the contract that is the source of all the contracts. I also write whether it is forking.
+
+{Embed}
+https://github.com/code-423n4/2022-02-jpyc/blob/main/contracts/README.md
+2022-02-jpyc/README.md at main · code-423n4/2022-02-jpyc
+Contribute to code-423n4/2022-02-jpyc development by creating an account on GitHub.
+Code4rena - ARCHIVE-Q1-2022 - ☑jpyc-feb24 [945746318846984272].txt_Files/52e49e95-3997-40be-805a-40da754722fb-5AA1C
+
+{Reactions}
+👏 (4) 
+
+[25-Feb-22 04:32 AM] Rhynorater#6461
+ああ、凄いですね。ありがとうございました！
+
+
+[25-Feb-22 04:36 AM] Rhynorater#6461
+なぜそのファイルを見逃したか全然分かりません。
+
+{Reactions}
+👍 
+
+[26-Feb-22 04:02 PM] C4#0000
+**🚨 CONTEST ALERT**
+
+@🐺wardens The **JPYC** contest is now closed! Huge thanks to everyone who participated🔍, whether you submitted a finding or not.
+
+What's next: JPYC's team will review the findings over the next couple of days, and then we'll pass them off to the judge. Keep an eye on #📢announcements for regular updates on how the contest is progressing through awarding 🤑🏆, judging 🧑‍⚖️ and reporting 📜. Feel free to ping an organizer if you have questions along the way!
+
+{Reactions}
+thankyou (2) 
+
+[03-Mar-22 04:27 AM] karacali#2562
+Hello, if any issue/bug are found, when will the details be shared?
+
+
+[03-Mar-22 06:16 AM] itsmetechjay | C4#5294
+Once we get through the sponsor review and judging processes, awards will be calculated and the final report will be published.  That's where you'll be able to see the submitted findings and the results.
+
+{Reactions}
+👍 (3) 
+
+==============================================================
+Exported 11 message(s)
+==============================================================
